@@ -1,8 +1,7 @@
 #!/usr/bin/make -f
-# Uncomment this to turn on verbose mode.
-DEB_BUILDDIR = $(DEB_SRCDIR)/debian/tmp
 
-export DH_VERBOSE=0
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
 
 export DEB_BUILD_OPTIONS=parallel=$(shell grep -c ^processor /proc/cpuinfo)
 
