@@ -13,7 +13,10 @@ override-dh_auto_configure:
 
 override-dh-strip:
 	dh_strip --dbg-package=libhpack-headers-dbg
-
+override_dh_prep:
+	mkdir debian/tmp/usr
+	mkdir debian/tmp/usr/lib
+	cp debian/tmp/libhpack-headers.so debian/tmp/usr/lib/libhpack-headers.so
 %:
-	dh $@ --parallel
+	dh $@ --builddirectory=debian/tmp --parallel
 

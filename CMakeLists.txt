@@ -81,7 +81,7 @@ add_cxx_compiler_flag(-fpic)
 IF(HPACK_ALLOW_TESTS)
     ENABLE_TESTING()
     ADD_SUBDIRECTORY(tests)
-    ADD_TEST(unit_test COMMAND ${CMAKE_BINARY_DIR}/tests/hpack-headers-tests )
+    ADD_TEST(unit_test ${CMAKE_BINARY_DIR}/tests/hpack-headers-tests )
 ENDIF()
 
 IF(!HPACK_IS_MODULE)
