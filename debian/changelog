@@ -1,3 +1,10 @@
+hpack-headers (0.1.0.1) unstable; urgency=low
+
+  * fixed test compilation
+  * fixed debian package creation 
+
+ -- Mikhail Kazantsev <kazan417@mail.ru>  Thu, 06 Aug 2015 04:31:56 +0700
+
 hpack-headers (0.1.0) unstable; urgency=low
 
   * Initial release
