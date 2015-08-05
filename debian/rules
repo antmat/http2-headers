@@ -16,7 +16,7 @@ override-dh-strip:
 override_dh_prep:
 	mkdir debian/tmp/usr
 	mkdir debian/tmp/usr/lib
-	ln -s debin/tmp/libhpack-headers.so debian/tmp/usr/lib/libhpack-headers.so
+	cp debian/tmp/libhpack-headers.so debian/tmp/usr/lib/libhpack-headers.so
 %:
 	dh $@ --builddirectory=debian/tmp --parallel
 
